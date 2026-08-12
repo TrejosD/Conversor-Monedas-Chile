@@ -55,8 +55,8 @@ async function getCurrencyHistory(currency){
 renderSelectUI();
 // al hacer click en el boton, eliminamos el grafico para reconstruirlo, modificamos el dom con la conversion de divisas y construccion del grafico.
 btn.addEventListener('click', async ()=>{
+  if(grafico != null) grafico.destroy();
   try {
-    if(grafico != null) grafico.destroy();
     let value = input.value;
     input.value = '';
     let selectValue = select.value;
@@ -73,6 +73,7 @@ grafico = new Chart(chart, config);
 })
 // metodo muestra un problema en el grafico
 function showChartError(){
+  if(grafico != null) grafico.destroy();
   let config = {
     type: 'bar',
     data: {
