@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 50px;
+}
+
+hr{
+    width: 60%;
+    margin-top: 12px;
+    color: rgb(129, 170, 206);
+}
+
+body{
+    background-color: rgb(61, 58, 58);
+    color: white;
+}
+
+.container{
+    margin-top: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    background-color: rgb(73, 70, 81);
+    border-radius: 14px;
+}
+
+.container input, .container select{
+    padding: 4px 6px;
+}
+
+.container button{
+    padding: 4px 6px;
+    font-weight: bold;
+    background-color: rgb(103, 175, 199);
+    width: 96%;
+    color: white;
+}
+
+.chart-container{
+    width: 70%;
+    margin-top: 30px;
+}
+
+#chart{
+    padding: 20px;
+    color: white;
+}

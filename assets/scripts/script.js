@@ -19,8 +19,7 @@ async function getCurrencyValue() {
   function showUiError(){
     const container = document.querySelector('.container');
     container.style.border = '2px red solid';
-    btn.textContent = 'Servicio no disponible'
-    
+    btn.textContent = 'Servicio no disponible'    
   }
   // metodo actualiza el select de acuerdo a la respuesta del endpoint
   async function renderSelectUI() {
@@ -62,16 +61,17 @@ btn.addEventListener('click', async ()=>{
     input.value = '';
     let selectValue = select.value;
     let currencyChange = value/selectValue;
-    result.innerHTML = currencyChange.toFixed(2);
+    result.innerHTML = `Resultado: $${currencyChange.toFixed(2)}`;
     const selectedItem = select.selectedOptions[0];
 let data = await getCurrencyHistory(selectedItem.text);
 let config = await createChartData(data, selectedItem.text);
+chart.style.backgroundColor = 'rgb(229,223,223)'
 grafico = new Chart(chart, config);
   } catch (error) {
     showChartError()
   }
 })
-
+// metodo muestra un problema en el grafico
 function showChartError(){
   let config = {
     type: 'bar',
