@@ -6,6 +6,7 @@
     <title>Conversor Pesos Chilenos</title>
   </head>
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <body>
     <main>
       <h1>Conversor de monedas Nacional</h1>
@@ -13,14 +14,14 @@
         <h3>Pesos CLP</h3>
         <input type="text" id="input" />
         <p>Moneda a convertir:</p>
-        <select name="moneda" id="modenaSelect"></select>
+        <select name="moneda" id="monedaSelect"></select>
         <button id="button">Buscar</button>
         <p id="result"></p>
       </div>
       <div class="chart-container">
         <canvas id="chart"></canvas>
       </div>
-      <script src="./assets/scripts/script.js"></script>
     </main>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
