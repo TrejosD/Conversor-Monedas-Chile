@@ -1,3 +1,7 @@
+<p align="center">
+  <a target="blank"><img src="./assets/img/js_logo.png" width="240" alt="Logo" /></a>
+</p>
+
 # Sistema Conversor de Divisas en base a pesos chilenos
 
 Proyecto estatico conversor de pesos chilenos a algunas divisas, basado en el valor diario aportado por:
@@ -37,6 +41,8 @@ La página muestra una aplicación para convertir pesos chilenos a algunas divis
 └── assets
     ├── css
     │   └── styles.css
+    ├── img
+    │   └── js_logo.png
     └── script
         └── script.js
 ```
